@@ -1,10 +1,5 @@
 def transform_string(s: str) -> str:
-    """
-    Vowels → uppercase
-    Consonants → lowercase
-    Digits & special chars unchanged
-    """
-        result = []
+    result = []
     for ch in s:
         if ch.isalpha():
             if ch.lower() in "aeiou":
@@ -14,4 +9,3 @@ def transform_string(s: str) -> str:
         else:
             result.append(ch)
     return "".join(result)
-
